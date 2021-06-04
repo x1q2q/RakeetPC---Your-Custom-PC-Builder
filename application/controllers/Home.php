@@ -6,7 +6,13 @@ class Home extends CI_Controller {
     parent::__construct();
   }
   public function index(){
-    echo "hello";
+		$data = array(
+      'for'			=> 'home',
+      'title'		=> 'RakeetPC - Home Page Landing',
+      );
+    $this->load->view('template/navbar',$data);
+    $this->load->view('pages/landing',$data);
+    $this->load->view('template/footer',$data);
   }
   public function error(){
 
