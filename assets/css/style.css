@@ -360,9 +360,9 @@ h6 {
   display: flex;
   background-color: #e6edf7;
   flex-wrap: nowrap;
-  height: 100vh;
+  height: auto;
   height: -webkit-fill-available;
-  max-height: 100vh;
+  max-height: auto;
   overflow-x: auto;
   overflow-y: hidden;
 }
@@ -1584,6 +1584,14 @@ section {
   font-size: 14px;
 }
 
+.breadcrumbs .sidenav:hover {
+  background: #1eb4ff;
+}
+
+.breadcrumbs .sidenav a:hover {
+  color: white;
+}
+
 .breadcrumbs ol li + li {
   padding-left: 10px;
 }
@@ -1595,6 +1603,11 @@ section {
   content: "/";
 }
 
+@media (max-width: 720px) {
+  .breadcrumbs .container {
+    display: none;
+  }
+}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
