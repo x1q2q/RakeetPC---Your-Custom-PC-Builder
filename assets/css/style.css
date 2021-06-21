@@ -358,6 +358,7 @@ h6 {
 --------------------------------------------------------------*/
 .main-sidebar {
   display: flex;
+  background-color: #e6edf7;
   flex-wrap: nowrap;
   height: 100vh;
   height: -webkit-fill-available;
